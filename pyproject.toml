@@ -1,0 +1,25 @@
+[project]
+name = "bpj"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Teeravist",email = "poomisi0841824189@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "transformers (>=4.52.3,<5.0.0)",
+    "torch (>=2.7.0,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "bpj", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+nox = "^2025.5.1"
+nox-poetry = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
